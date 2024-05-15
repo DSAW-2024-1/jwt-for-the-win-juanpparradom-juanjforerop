@@ -40,6 +40,12 @@ const users=[
     {"email": "usuario20@gmail.com", "username": "user20", "id": "120", "password": "contraseña20"}
 ]
 
+app.get('/', (req, res) => {
+    console.log("accedio sin problemas a /")
+    res.status(200).send("Ha accedido a localhost:3000, vaya a login para obtener su token")
+    //res.send("Ha accedido a localhost:8080")
+  });
+
 /*const testUser = {
         id: 1,
         nombre: "henry",
